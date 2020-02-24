@@ -1,21 +1,25 @@
 {
-  "name": "egg-sequelize",
-  "version": "5.2.1",
-  "description": "egg Sequelize plugin",
+  "name": "egg-sequelize-ts-plugin",
+  "version": "1.0.0",
+  "description": "sequelize-typescript plugin for egg.js",
   "eggPlugin": {
-    "name": "sequelize"
+    "name": "sequelize-typescript"
   },
   "keywords": [
     "egg",
     "sequelize",
     "egg-plugin",
     "eggPlugin",
-    "orm"
+    "orm",
+    "typescript",
+    "sequelize-typescript"
   ],
   "dependencies": {
     "@types/sequelize": "^4.27.24",
     "mz-modules": "^2.1.0",
-    "sequelize": "^5.0.0"
+    "sequelize": "^5.0.0",
+    "sequelize-typescript": "^1.1.0",
+    "reflect-metadata": "^0.1.13"
   },
   "devDependencies": {
     "autod": "^3.0.1",
@@ -46,13 +50,13 @@
     "index.d.ts"
   ],
   "repository": {
-    "type": "git",
-    "url": "git+https://github.com/eggjs/egg-sequelize.git"
+    "type": "https",
+    "url": "https://github.com/GoodbyeNJN/egg-sequelize-typescript.git"
   },
   "bugs": {
-    "url": "https://github.com/eggjs/egg/issues"
+    "url": "https://github.com/GoodbyeNJN/egg-sequelize-typescript/issues"
   },
-  "homepage": "https://github.com/eggjs/egg-sequelize#readme",
-  "author": "jtyjty99999",
+  "homepage": "https://github.com/GoodbyeNJN/egg-sequelize-typescript",
+  "author": "jtyjty99999, cc",
   "license": "MIT"
 }
