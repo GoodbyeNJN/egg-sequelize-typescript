@@ -1,6 +1,6 @@
-import * as sequelize from 'sequelize';
+import { Sequelize, SequelizeOptions } from 'sequelize-typescript';
 
-interface EggSequelizeOptions extends sequelize.Options {
+interface EggSequelizeOptions extends SequelizeOptions {
   /**
    * load all models to `app[delegate]` and `ctx[delegate]`, default to `model`
    */
@@ -29,11 +29,11 @@ interface DataSources {
 }
 
 declare module 'egg' {
-  interface IModel extends sequelize.Sequelize, PlainObject {}
+  interface IModel extends Sequelize, PlainObject { }
 
   // extend app
   interface Application {
-    Sequelize: typeof sequelize;
+    Sequelize: Sequelize;
     model: IModel;
   }
 
